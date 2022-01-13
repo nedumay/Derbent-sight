@@ -1,4 +1,4 @@
-package com.example.derbentsight.adapterTab
+package com.example.derbentsight.adapter
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -2,12 +2,10 @@ package com.example.derbentsight
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
-import com.example.derbentsight.adapterTab.AdapterTab
+import com.example.derbentsight.adapter.AdapterTab
 import com.example.derbentsight.data.tabIcons
 import com.example.derbentsight.data.tabNames
-import com.example.derbentsight.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
