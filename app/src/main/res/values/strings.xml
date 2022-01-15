@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Derbent sight</string>
+    <string name="sight">Sight</string>
+    <string name="cafe">Cafe</string>
+    <string name="hotel">Hotel</string>
+    <string name="taxi">Taxi</string>
+    <string name="grocery_store">Store</string>
+    <string name="map">Map city</string>
+    <string name="home">Home</string>
+    <string name="transport">Transport</string>
+    <string name="excursion">Excursion</string>
+
+</resources>
