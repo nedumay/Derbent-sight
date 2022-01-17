@@ -3,18 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu_item_home"
-        android:enabled="true"
+        android:id="@+id/NavHomeFragment"
         android:icon="@drawable/ic_baseline_home"
         android:title="@string/home"/>
     <item
-        android:id="@+id/menu_item_transport"
-        android:enabled="true"
+        android:id="@+id/NavTransportFragment"
         android:icon="@drawable/ic_baseline_local_taxi"
         android:title="@string/transport"/>
     <item
-        android:id="@+id/menu_item_excursion"
-        android:enabled="true"
+        android:id="@+id/NavExcursionFragment"
         android:icon="@drawable/ic_baseline_directions_walk"
         android:title="@string/excursion"/>
 

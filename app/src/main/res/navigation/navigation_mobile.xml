@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_mobile"
@@ -8,16 +9,16 @@
     <fragment
         android:id="@+id/NavHomeFragment"
         android:name="com.example.derbentsight.ui.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/NavTransportFragment"
         android:name="com.example.derbentsight.ui.TransportFragment"
-        android:label="fragment_transport"
+        android:label="Transport"
         tools:layout="@layout/fragment_transport" />
     <fragment
         android:id="@+id/NavExcursionFragment"
         android:name="com.example.derbentsight.ui.ExcursionFragment"
-        android:label="fragment_excursion"
+        android:label="Excursion"
         tools:layout="@layout/fragment_excursion" />
 </navigation>
