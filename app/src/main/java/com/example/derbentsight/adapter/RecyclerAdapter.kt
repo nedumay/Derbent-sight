@@ -32,6 +32,7 @@ class RecyclerAdapter internal constructor(context: Context?, dataItem: List<Dat
         val person: DataItem = dataItem[position]
         holder.imgPhoto.setImageResource(person.imageId)
         holder.namePhoto.setText(person.name)
+        holder.addressPhoto.setText(person.address)
 
         holder.itemView.setOnClickListener {
             onClickListener.onSightClick(person,position)
@@ -46,10 +47,12 @@ class RecyclerAdapter internal constructor(context: Context?, dataItem: List<Dat
     class ViewHolder internal constructor(view: View):RecyclerView.ViewHolder(view){
         val imgPhoto: ImageView
         val namePhoto: TextView
+        val addressPhoto: TextView
 
         init {
             imgPhoto = view.findViewById(R.id.img_photo)
             namePhoto = view.findViewById(R.id.name_photo)
+            addressPhoto = view.findViewById(R.id.address_photo)
         }
 
     }

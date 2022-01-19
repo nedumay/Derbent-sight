@@ -12,6 +12,7 @@ import com.example.derbentsight.data.tabIcons
 import com.example.derbentsight.data.tabNames
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import java.lang.IllegalStateException
 
 class HomeFragment : Fragment() {
 
