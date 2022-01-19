@@ -19,10 +19,10 @@ class SightFragment : BaseFragment(R.layout.fragment_sight) {
 
     val dataItem: ArrayList<DataItem> = ArrayList()
 
-    /*override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_sight, container, false)
 
-    }*/
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         setInitialSavedState()

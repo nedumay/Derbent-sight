@@ -16,16 +16,16 @@ class StoreFragment: BaseFragment(R.layout.fragment_store) {
 
     val dataItem: ArrayList<DataItem> = ArrayList()
 
-    /*override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_sight, container, false)
 
-    }*/
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        //setInitialSavedState()
+        setInitialSavedState()
         super.onViewCreated(view, savedInstanceState)
         //arguments?.takeIf { it.containsKey(ARG_OBJECT) }?.apply {
-        /*
+
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
         val recClickListener = object : onRecyclerClickListener {
             override fun onSightClick(dataItem: DataItem, position: Int) {
@@ -50,7 +50,7 @@ class StoreFragment: BaseFragment(R.layout.fragment_store) {
         }
         val adapter = RecyclerAdapter(context, dataItem,recClickListener)
         recyclerView.adapter = adapter
-        // }*/
+        // }*
 
     }
 

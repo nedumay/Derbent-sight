@@ -16,16 +16,16 @@ class CafeFragment : BaseFragment(R.layout.fragment_cafe) {
 
     val dataItem: ArrayList<DataItem> = ArrayList()
 
-    /*override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_sight, container, false)
 
-    }*/
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        //setInitialSavedState()
+        setInitialSavedState()
         super.onViewCreated(view, savedInstanceState)
         //arguments?.takeIf { it.containsKey(ARG_OBJECT) }?.apply {
-        /*
+
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
         val recClickListener = object : onRecyclerClickListener {
             override fun onSightClick(dataItem: DataItem, position: Int) {
@@ -57,33 +57,43 @@ class CafeFragment : BaseFragment(R.layout.fragment_cafe) {
     private fun setInitialSavedState() {
         dataItem.add(
             DataItem(
-            "Cafe 1",
-            "Адрес: "
-            , R.drawable.photo_nar_kala)
+            "Kaфе Рандеву\n" +
+                    " Кухня: Японская, Европейская, Восточноевропейская\n" +
+                    " Диапазон цен: 100 руб - 1 500 руб ",
+            "Адрес: ул. Гагарина, 10, Дербент 368600"
+            , R.drawable.randvy)
         )
         dataItem.add(
             DataItem(
-            "Cafe 2",
-            "Адрес: ",
-            R.drawable.photo_derb_stena)
+            "Buro 345\n" +
+                    " Кухня: Японская, Европейская, Азиатская, Грузинская, Восточноевропейская, Кавказская\n" +
+                    " Диапазон цен: 300 руб - 700 руб ",
+            "Адрес: 345 Дагестанской Стрелковой Дивизии, 8Б/2, Дербент 368608",
+            R.drawable.buro)
         )
         dataItem.add(
             DataItem(
-            "Cafe 3",
-            "Адрес: ",
-            R.drawable.photo_khans_bath)
+            "Cafe Z&M\n" +
+                    " Кухня: Европейская\n" +
+                    " Диапазон цен: ???",
+            "Адрес: Гагарина, дом 14, Дербент 368600",
+            R.drawable.zm)
         )
         dataItem.add(
             DataItem(
-            "Cafe 4",
-            "Адрес: ",
-            R.drawable.photo_mechet)
+            "Шолковый путь\n" +
+                    " Кухня: Европейская,Восточноевропейская,Кавказская\n" +
+                    " Диапазон цен: 90 руб - 1 500 руб",
+            "Адрес: Makhachkala-Derbent rd., Дербент 368600",
+            R.drawable.shelc)
         )
         dataItem.add(
             DataItem(
-            "Cafe 5",
-            "Адрес: ",
-            R.drawable.photo_home_petr)
+            "Ресторан Хаял\n" +
+                    " Кухня: Европейская,Азербайджанская\n" +
+                    " Диапазон цен: 500 руб - 1 500 руб",
+            "Адрес: ул. 3-го Интернационала, 4, Дербент 368601",
+            R.drawable.hayal)
         )
     }
 
