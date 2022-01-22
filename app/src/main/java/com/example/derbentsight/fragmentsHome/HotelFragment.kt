@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.derbentsight.R
 import com.example.derbentsight.adapter.BaseFragment
-import com.example.derbentsight.adapter.RecyclerAdapter
+import com.example.derbentsight.adapter.RecyclerAdapterSight
 import com.example.derbentsight.adapter.onRecyclerClickListener
 import com.example.derbentsight.data.DataItem
 
@@ -48,7 +48,7 @@ class HotelFragment : BaseFragment(R.layout.fragment_hotel) {
                 }
             }
         }
-        val adapter = RecyclerAdapter(context, dataItem,recClickListener)
+        val adapter = RecyclerAdapterSight(context, dataItem,recClickListener)
         recyclerView.adapter = adapter
         // }*/
 
@@ -57,19 +57,19 @@ class HotelFragment : BaseFragment(R.layout.fragment_hotel) {
     private fun setInitialSavedState() {
         dataItem.add(
             DataItem(
-                "Отель SeaZone\n" +
-                        "Услуги и удобства в отеле: Бесплатная парковка и Wi-Fi" +
+                "Отель SeaZone",
+                "Услуги и удобства в отеле: Бесплатная парковка и Wi-Fi" +
                         "ресторан, пляж, трансфер из/до аэропорта, круглосуточная охрана.\n" +
                         "Оснащенность номера: кондиционер, уборка и обслуживание номеров, письменный стол" +
                         "кофеварка/чайник, холодильник, ванна/душ, кабельное и спутниковое Tv.\n" +
                         "Типы номеров: с видом на горы, с видом на море, номера-люксы, семейные номера",
-                "Адрес: ул. Г. Длинная, 5, Дербент 368604 "
-                , R.drawable.seazone)
+                "Адрес: ул. Г. Длинная, 5, Дербент 368604 ",
+            R.drawable.seazone)
         )
         dataItem.add(
             DataItem(
-                "Отель Элит\n" +
-                        "Услуги и удобства в отеле: Бесплатная парковка и Wi-Fi" +
+                "Отель Элит",
+                "Услуги и удобства в отеле: Бесплатная парковка и Wi-Fi" +
                         "конференц-залы, салон красоты, хранение багажа, круглосуточная работа стойки регистрации\n" +
                         "Оснащенность номера: кондиционер, уборка и обслуживание номеров.\n" +
                         "Типы номеров: ---",
@@ -78,8 +78,8 @@ class HotelFragment : BaseFragment(R.layout.fragment_hotel) {
         )
         dataItem.add(
             DataItem(
-                "Отель Metropol\n" +
-                        "Услуги и удобства в отеле: Бесплатный завтрак" +
+                "Отель Metropol",
+                "Услуги и удобства в отеле: Бесплатный завтрак" +
                         "бар/лаунж, ресторан, пляж.\n" +
                         "Оснащенность номера: кондиционер, письменный стол, телефон, купальные халаты, " +
                         "напольная вешалка для одежды, мини-бар, ТВ с плоским экраном, ванна/дущ.\n" +
@@ -89,7 +89,7 @@ class HotelFragment : BaseFragment(R.layout.fragment_hotel) {
         )
         dataItem.add(
             DataItem(
-                "Отель Шахристан\n" +
+                "Отель Шахристан",
                         "Услуги и удобства в отеле: Бесплатная Wi-Fi. \n" +
                         "Оснащенность номера: кондиционер, телефон, " +
                         "напольная вешалка для одежды, холодильник, удлиненные кровати, бесплатные туалетные принадлежности.\n" +
@@ -99,7 +99,7 @@ class HotelFragment : BaseFragment(R.layout.fragment_hotel) {
         )
         dataItem.add(
             DataItem(
-                "Отель Красный бык\n" +
+                "Отель Красный бык",
                         "Услуги и удобства в отеле: Бесплатная Wi-Fi, бар/лаунж, рыбалка, " +
                         "автобусный трансфер, массаж, круглосуточная работа стойки регистрации," +
                         "услуги прачечной, массаж.\n" +

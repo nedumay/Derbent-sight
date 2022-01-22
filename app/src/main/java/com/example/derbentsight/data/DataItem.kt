@@ -1,9 +1,10 @@
 package com.example.derbentsight.data
 
-class DataItem (var name: String, var address:String, var imageId: Int) {
+class DataItem (var title: String, var text: String, var address:String, var imageId: Int) {
 
     init {
-        name = name
+        title = title
+        text = text
         address = address
         imageId = imageId
     }

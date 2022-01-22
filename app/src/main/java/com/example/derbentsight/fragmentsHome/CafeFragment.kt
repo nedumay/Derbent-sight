@@ -8,7 +8,8 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.derbentsight.R
 import com.example.derbentsight.adapter.BaseFragment
-import com.example.derbentsight.adapter.RecyclerAdapter
+import com.example.derbentsight.adapter.RecyclerAdapterCafe
+import com.example.derbentsight.adapter.RecyclerAdapterSight
 import com.example.derbentsight.adapter.onRecyclerClickListener
 import com.example.derbentsight.data.DataItem
 
@@ -48,7 +49,7 @@ class CafeFragment : BaseFragment(R.layout.fragment_cafe) {
                 }
             }
         }
-        val adapter = RecyclerAdapter(context, dataItem,recClickListener)
+        val adapter = RecyclerAdapterCafe(context, dataItem,recClickListener)
         recyclerView.adapter = adapter
         // }*/
 
@@ -57,39 +58,39 @@ class CafeFragment : BaseFragment(R.layout.fragment_cafe) {
     private fun setInitialSavedState() {
         dataItem.add(
             DataItem(
-            "Kaфе Рандеву\n" +
-                    " Кухня: Японская, Европейская, Восточноевропейская\n" +
+                "Kaфе Рандеву",
+                " Кухня: Японская, Европейская, Восточноевропейская\n" +
                     " Диапазон цен: 100 руб - 1 500 руб ",
             "Адрес: ул. Гагарина, 10, Дербент 368600"
             , R.drawable.randvy)
         )
         dataItem.add(
             DataItem(
-            "Buro 345\n" +
-                    " Кухня: Японская, Европейская, Азиатская, Грузинская, Восточноевропейская, Кавказская\n" +
+                "Кафе Buro 345",
+                " Кухня: Японская, Европейская, Азиатская, Грузинская, Восточноевропейская, Кавказская\n" +
                     " Диапазон цен: 300 руб - 700 руб ",
             "Адрес: 345 Дагестанской Стрелковой Дивизии, 8Б/2, Дербент 368608",
             R.drawable.buro)
         )
         dataItem.add(
             DataItem(
-            "Cafe Z&M\n" +
-                    " Кухня: Европейская\n" +
+                "Кафе Z&M",
+                " Кухня: Европейская\n" +
                     " Диапазон цен: ???",
             "Адрес: Гагарина, дом 14, Дербент 368600",
             R.drawable.zm)
         )
         dataItem.add(
             DataItem(
-            "Шолковый путь\n" +
-                    " Кухня: Европейская,Восточноевропейская,Кавказская\n" +
+                "Ресторан Шолковый путь",
+                " Кухня: Европейская,Восточноевропейская,Кавказская\n" +
                     " Диапазон цен: 90 руб - 1 500 руб",
             "Адрес: Makhachkala-Derbent rd., Дербент 368600",
             R.drawable.shelc)
         )
         dataItem.add(
             DataItem(
-            "Ресторан Хаял\n" +
+                "Ресторан Хаял",
                     " Кухня: Европейская,Азербайджанская\n" +
                     " Диапазон цен: 500 руб - 1 500 руб",
             "Адрес: ул. 3-го Интернационала, 4, Дербент 368601",
