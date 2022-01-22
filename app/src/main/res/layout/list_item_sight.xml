@@ -12,8 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         tools:ignore="MissingConstraints"
-        style="@style/Widget.App.CardView"
-        app:cardPreventCornerOverlap="false"
         app:strokeWidth="1dp"
         app:strokeColor="@color/stroke_color"
         app:cardElevation="0dp">
