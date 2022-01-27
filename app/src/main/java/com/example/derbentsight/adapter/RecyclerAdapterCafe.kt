@@ -35,7 +35,7 @@ class RecyclerAdapterCafe internal constructor(context: Context?, dataItem: List
         holder.addressPhoto.setText(person.address)
 
         holder.itemView.setOnClickListener {
-            onClickListener.onSightClick(person,position)
+            onClickListener.onRecClick(person,position)
         }
 
     }

@@ -18,18 +18,17 @@ class CafeFragment : BaseFragment(R.layout.fragment_cafe) {
     val dataItem: ArrayList<DataItem> = ArrayList()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_sight, container, false)
-
+        setInitialSavedState()
+        return inflater.inflate(R.layout.fragment_cafe, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        setInitialSavedState()
+
         super.onViewCreated(view, savedInstanceState)
-        //arguments?.takeIf { it.containsKey(ARG_OBJECT) }?.apply {
 
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
         val recClickListener = object : onRecyclerClickListener {
-            override fun onSightClick(dataItem: DataItem, position: Int) {
+            override fun onRecClick(dataItem: DataItem, position: Int) {
                 when(position){
                     0 ->{
                         Toast.makeText(context,"test1", Toast.LENGTH_SHORT).show()
@@ -51,8 +50,6 @@ class CafeFragment : BaseFragment(R.layout.fragment_cafe) {
         }
         val adapter = RecyclerAdapterCafe(context, dataItem,recClickListener)
         recyclerView.adapter = adapter
-        // }*/
-
     }
 
     private fun setInitialSavedState() {

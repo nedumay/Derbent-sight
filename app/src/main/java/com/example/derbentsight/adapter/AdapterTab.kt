@@ -1,20 +1,17 @@
 package com.example.derbentsight.adapter
 
-import android.os.Bundle
 import android.util.ArrayMap
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentContainer
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.derbentsight.fragmentsHome.CafeFragment
 import com.example.derbentsight.fragmentsHome.HotelFragment
 import com.example.derbentsight.fragmentsHome.SightFragment
-import com.example.derbentsight.fragmentsHome.StoreFragment
 import com.example.derbentsight.ui.HomeFragment
 import java.lang.IllegalStateException
 
 class AdapterTab(container: HomeFragment): FragmentStateAdapter(container),FragmentReplacer {
     companion object {
-        private const val PAGE_COUNT = 4
+        private const val PAGE_COUNT = 3
     }
     private val mapOfFragment = ArrayMap<Int,BaseFragment>()
     //override fun getItemCount(): Int = 4
@@ -32,7 +29,6 @@ class AdapterTab(container: HomeFragment): FragmentStateAdapter(container),Fragm
             0 -> SightFragment()
             1 -> CafeFragment()
             2 -> HotelFragment()
-            3 -> StoreFragment()
             else -> throw IllegalStateException()
         }
         replace(position, fragment, isNotify)

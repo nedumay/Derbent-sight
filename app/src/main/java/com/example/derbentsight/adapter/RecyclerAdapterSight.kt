@@ -35,7 +35,7 @@ class RecyclerAdapterSight internal constructor(context: Context?, dataItem: Lis
         holder.addressPhoto.setText(person.address)
 
         holder.itemView.setOnClickListener {
-            onClickListener.onSightClick(person,position)
+            onClickListener.onRecClick(person,position)
         }
 
     }

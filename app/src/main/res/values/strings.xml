@@ -9,5 +9,7 @@
     <string name="home">Home</string>
     <string name="transport">Transport</string>
     <string name="excursion">Excursion</string>
+    <string name="bus">Bus</string>
+    <string name="minibus">Mini bus</string>
 
 </resources>

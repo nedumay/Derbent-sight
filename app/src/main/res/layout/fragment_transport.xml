@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.TransportFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/plant_detail_scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello transport" />
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textBus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bus"
+                android:padding="10dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerBus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/textMiniBus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/minibus"
+                android:padding="10dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMiniBus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/textTaxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/taxi"
+                android:padding="10dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerTaxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
 
 </FrameLayout>
